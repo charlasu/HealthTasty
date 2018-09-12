@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<title>All plots that compare Health Inspection Grades/Scores versus Yelp Stars in Los Angeles</title>
+	<!--bootstrap link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</HEAD>
+<BODY>
+	<!--Header/Navigation Bar-->
+	<div class="menu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">Health-Tasty</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+		<!--Dropdown nav item-->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<ul class="navbar-nav mr-auto">
+		  		<li class="nav-item dropdown">
+		  			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis / Plots</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="health_scores_yelp_stars.html">Overview: Health Scores & Yelp Stars</a>
+		          <a class="dropdown-item" href="heat_maps.html">Location: Heat Maps</a>
+		          <!--<div class="dropdown-divider"></div>-->
+		          <a class="dropdown-item" href="pricing.html">Restaurant Pricing</a>
+		          <a class="dropdown-item" href="scatter_plot.html">Scatter Plot of Results</a>
+		        </div>
+		    	</li>
+		    </ul>
+		</div>
+		<!--Bootstrap scripts to ensure the dropdown works-->
+	 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<!--Remaining nav items-->
+		<li class="nav-item active">
+		    <a class="nav-link" href="compare.html">Compare All Plots<span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Data</a>
+		</li>
+	</div>
+	</nav>
+
+	<!--Body Copy-->
+	<header class = "header">
+		<H1>All Data Analysis Visuals</H1>
+		<H2>Comparison of Los Angeles Restaurants</H2>
+	</header>
+	<BR>
+	<MAIN>
+	<div class="container">
+		<section class = "posts">
+			<article class = "post">
+				<P><strong>Inspection grade and corresponding percentages of Yelp stars:</strong><BR> 
+
+	
+    <div class="row"> 
+    	<!-- First of three columns -->
+    	<div class="col-md-4">
+        <img width="130%" src = "img/A_rating_counts.jpg" alt="A-scores restaurants">
+    	</div>
+    	<!-- Second of three columns -->
+    	<div class="col-md-4">
+        <img width="130%"src = "img/B_rating_counts.jpg" alt="B-scores restaurants">
+    	</div>
+    	<!-- Third of three columns -->
+    	<div class="col-md-4">
+        <img width="130%" src = "img/C_rating_counts.jpg" alt="C-scores restaurants">
+    	</div>
+    </div>
+
+
+		<P><strong>Heat map to show concentration of inspection grades:</strong><BR> 
+
+    <div class="row"> 
+    	<!-- Due to elongated images, using full-width for each heat map -->
+    	<div class="col-md-12">
+        <img src = "img/Health Score Heatmap.png" alt="Heatmap of inspection grades"><BR><BR><BR>
+    	</div>
+    	<div class="col-md-12">
+        <img src = "img/Yelp Rating Heatmap.png" alt="Heatmap of Yelp stars">
+    	</div>
+    </div>
+
+		<P><strong>Statistical scatter plot and line of best fit:</strong><BR> 
+        <div class="row"> 
+    	<!-- Due to this being a single image, using full-width -->
+    	<div class="col-md-12">
+        <img src = "img/scatter_and_lineofbestfit.png" alt="Scatter plot with line of best fit"><BR>
+    </div>
+
+
+		<P><strong>Percentage of reviews for each Yelp star:</strong><BR> 
+        <div class="row"> 
+    	<!-- Due to this being a single image, using full-width -->
+    	<div class="col-md-12">
+        <img width="60%" src = "img/rating_counts.jpg" alt="Percentages of Yelp Stars"><BR>
+    </div>
+
+
+	<P><strong>Yelp stars in relation to consumer cost:</strong><BR> 
+
+    <div class="row"> 
+    	<!-- First of four columns -->
+    	<div class="col-md-6">
+        <img width="95%" src = "img/$_rating_counts.jpg" alt="inexpensive restaurants and their Yelp ratings">
+    	</div>
+    	<!-- Second of four columns -->
+    	<div class="col-md-6">
+        <img width="95%" src = "img/$$_rating_counts.jpg" alt="inexpensive restaurants and their Yelp ratings">
+    	</div>
+    	<BR>
+    	<!-- Third of four columns -->
+    	<div class="col-md-6">
+        <img width="95%"src = "img/$$$_rating_counts.jpg" alt="inexpensive restaurants and their Yelp ratings">
+    </div>
+
+        <!-- Fourth of four columns -->
+    	<div class="col-md-6">
+        <img width="95%"src = "img/$$$$_rating_counts.jpg" alt="inexpensive restaurants and their Yelp ratings">
+    	</div>
+    </div>
+
+			</article>
+		</section>
+
+	</MAIN>
+ 	</div>
+
+<</BODY>
+</HTML>

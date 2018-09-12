@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<title>Heat maps of Health Inspection Grades/Scores and Yelp Stars in Los Angeles</title>
+	<!--bootstrap link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</HEAD>
+<BODY>
+	<!--Header/Navigation Bar-->
+	<div class="menu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">Health-Tasty</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+		<!--Dropdown nav item-->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<ul class="navbar-nav mr-auto">
+		  		<li class="nav-item dropdown">
+		  			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis / Plots</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="health_scores_yelp_stars.html">Overview: Health Scores & Yelp Stars</a>
+		          <a class="dropdown-item" href="heat_maps.html">Location: Heat Maps</a>
+		          <!--<div class="dropdown-divider"></div>-->
+		          <a class="dropdown-item" href="pricing.html">Restaurant Pricing</a>
+		          <a class="dropdown-item" href="scatter_plot.html">Scatter Plot of Results</a>
+		        </div>
+		    	</li>
+		    </ul>
+		</div>
+		<!--Bootstrap scripts to ensure the dropdown works-->
+	 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<!--Remaining nav items-->
+		<li class="nav-item active">
+		    <a class="nav-link" href="compare.html">Compare All Plots<span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Data</a>
+		</li>
+	</div>
+	</nav>
+
+	<!--Body Copy-->
+	<header class = "header">
+		<H1>If Ya Can't Stand the Heat ...</H1>
+		<H2>Heat Maps of Restaurants in Los Angeles</H2>
+	</header>
+	<BR>
+	<MAIN>
+		<section class = "posts">
+			<article class = "post">
+				<P>The top/left heat map shows Health Score (with higher score in warmer colors), while the heat map on the bottom/right shows Yelp Grades (with higher grades in warmer colors). Our initial analysis is for Los Angeles city only—that’s why there’s no data for Beverly Hills in the middle or Culver City / Santa Monica on the westside. Red indicates a higher inspection score or review rating.  Although the maps are similar, in the top map you can see a larger “blob” of red for health inspections, meaning more restaurants have received higher score/grade—this brings-to-life the average numbers we saw on the previous slide. While in the bottom map shows a larger cluster of restaurants for central LA, you see a bit more green as you head South on the 110. <BR>
+
+				One overlap: maybe avoid eating in Lynnwood ;-)<BR>
+
+				Note: This data will also be more meaningful if we were to look more in granular level by zooming in the google map and use different values of intensities and heat radius to a particular area in LA.<BR>
+				</P>
+				<BR>
+				
+				<P>Heat map to show concentration of inspection grades:<BR>  
+				<img width="40%" src = "img/Health Score Heatmap.png" alt="Heatmap of inspection grades">
+				</P><BR>
+
+				<P>Heat map to show concentration of Yelp stars:<BR>  
+				<img width="40%" src = "img/Yelp Rating Heatmap.png" alt="Heatmap of Yelp stars">
+				</P><BR>
+
+
+			</article>
+		</section>
+
+	</MAIN>
+ 	</div>
+
+<</BODY>
+</HTML>
