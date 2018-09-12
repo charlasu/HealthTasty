@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<title>Analysis of restaurant Health Inspection Grades/Scores versus Yelp Stars in Los Angeles</title>
+	<!--bootstrap link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</HEAD>
+<BODY>
+	<!--Header/Navigation Bar-->
+	<div class="menu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">Health-Tasty</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+		<!--Dropdown nav item-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<ul class="navbar-nav mr-auto">
+		  		<li class="nav-item dropdown">
+		  			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis / Plots</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="health_scores_yelp_stars.html">Overview: Health Scores & Yelp Stars</a>
+		          <a class="dropdown-item" href="heat_maps.html">Location: Heat Maps</a>
+		          <!--<div class="dropdown-divider"></div>-->
+		          <a class="dropdown-item" href="pricing.html">Restaurant Pricing</a>
+		          <a class="dropdown-item" href="scatter_plot.html">Scatter Plot of Results</a>
+		        </div>
+		    	</li>
+		    </ul>
+		</div>
+		<!--Bootstrap scripts to ensure the dropdown works-->
+	 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<!--Remaining nav items-->
+		<li class="nav-item">
+		    <a class="nav-link" href="compare.html">Compare All Plots</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Data</a>
+		</li>
+	</div>
+	</nav>
+
+	<!--Body Copy-->
+	<header class = "header">
+		<H1>Do Health Inspections Impact Yelp Ratings?</H1>
+		<H2>Review of Los Angeles Restaurants</H2>
+	</header>
+	<BR>
+	<MAIN>
+		<section class = "posts">
+			<article class = "post">
+				<P>Los Angeles has a strong food-focused culture because of the amazing year-round, farm-fresh produce, the mix of immigrant flavors, and the upswell of social media where people post images and review every dining experience. The county's Department of Health is responsible for regular inspections at all restaurants where they check everything from food temperatures to storage practices. Is there a correlation a restaurant's health inspection grade and the overall number of Yelp stars?<BR><BR>
+
+				From looking at each <a href="health_scores_yelp_stars.html">health grade and the percentage of Yelp stars</a> to seeing <a href="heat_maps.html">heatmaps</a> for the concentrations of the geographic areas and creating a <a href="scatter_plot.html">scatter plot</a> with the line of best fit lies the answer to the question of correlation.<BR><BR>
+
+				As there seemed to be no correlation between consumer tastes and a restaurant’s food-safety abilities, next we dove deeper into the Yelp data. First, looking at each restaurant’s average rating, we broke that down into percentages. Much like the density on the scatter plot we’ll see in a bit, we see the majority of L.A. restaurants average 4 stars. Then, for fun, there's a deeper look at number of <a href="pricing.html">Yelp stars in comparison to pricing</a> as well as a way to <a href="compare.html">view all data visualizations</a> at once.<BR>	
+			</P>
+			<div class="container">
+				<section class = "posts">
+					<article class = "post">
+						<P><strong>Here’s a look at the percentages of ratings by each star level:</strong><BR> 
+							<div class="row"> 
+								<!-- First of three columns -->
+    							<div class="col-md-6">
+        						<UL>
+									<LI>1-star =  863 ratings</LI>
+									<LI>2-star = 4,169 ratings</LI>
+									<LI>3-star = 12,860 ratings</LI>
+									<LI>4-star = 15,429 ratings</LI>
+									<LI>5-star = 1,079 ratings</LI>
+								</UL>
+							</div>
+    							<!-- Second of three columns -->
+    							<div class="col-md-6">
+    								<img src = "img/rating_counts.jpg" alt="Percentages of Yelp Stars">
+    						</div>
+    
+				</P>
+
+			</article>
+		</section>
+
+	</MAIN>
+ 	</div>
+
+<</BODY>
+</HTML>
